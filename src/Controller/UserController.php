@@ -55,7 +55,7 @@ class UserController extends AbstractController
         if ($avatar) {
             $avatarFilename = $fileUploadService->uploadFile($avatar, $slugger);
             //$photoUrl = $this->uploadToS3($avatar, $avatarFilename, $s3Client);
-            $user->setAvatar($avatarFilename);
+            $user->setAvatar('/uploads/images/' .$avatarFilename);
         } else {
             $user->setAvatar('default-avatar.png');
         }
