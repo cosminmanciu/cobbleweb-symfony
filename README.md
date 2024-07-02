@@ -19,3 +19,4 @@
 - Connect to Docker PHP container
 - `composer install`
 - `php bin/console doctrine:schema:update --force`
+- `php bin/console lexik:jwt:generate-keypair`
